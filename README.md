@@ -1,9 +1,11 @@
 IEEE-CIS Fraud Detection
+
 	* კონკურსის მიზანია მანქანური სწავლების სხვადასხვა მეთოდის გამოყენება სავარაუდო Fraud- ის შესახებ პროგნოზის გასაკეთებლად.
 	
 	* პრობლემის გადასაწყვეტად გამოვიყენე Cleaning, Feature Engineering და Feature Selection - ის სხვადასხვა მიდგომა და შემდეგი მოდელები: Logistic Regression, Random Forest, Decision Trees და XGBoost.
 
 რეპოზიტორიის სტრუქტურა:
+
 	* model_experiment_Logistic_Regression: 
 		ხდება მონაცემების Cleaning, Feature Engineering და Feature Selection.
 		გასუფთავებისთვის უბრალოდ ისეთ სვეტებს რომლებსაც NAN მნიშვნელობების რაოდენობა 90% ზე მეტი აქვთ ვყრი და დარჩენილ NAN მნიშვნელობებს მოდით ვანაცვლებ.
@@ -33,6 +35,7 @@ IEEE-CIS Fraud Detection
 	* README 
 	
 Feature Engineering
+
 	* სვეტები რომელთაც ზედმეტად ბევრი NAN მნიშვნელობა ჰქონდა გადავყარე (80%, 90%)
 	
 	* NAN მნიშვნელობები ჩავანაცვლე მოდით, შეიძლებოდა საშუალოს ან მედიანის გამოყენება, თუმცა ჩემი აზრით, მოდა ყველაზე ლოგიკურია.
@@ -43,9 +46,11 @@ Feature Engineering
 	
 
 Feature Selection
+
 	* გამოვიყენე SelectKBest სხვადასხვა პარამეტრებით, უნდა აღინიშნოს, Random_Forest, Decision_Tree და xgboost კარგ შედეგს დებს Feature Selection-ის გარეშეც.
 	
 Training
+
 	* Logistic Regression, Random Forest, Decision Trees და XGBoost
 	
 	* Hyperparameter-ების შესარჩევად აქაც და სხვა მოდელების შემთხვევაშიც რამდენიმე სხვადასხვა მოდელი გავტესტე. იმის მიხედვით overfitting ან underfitting ხდებოდა თუ არა შევეცადე ოპტიმალური პარამეტრების შერჩევას.
@@ -53,6 +58,7 @@ Training
 	* საუკეთესო შედეგი ჰქონდა XGBoost-ს. ეს მოდელი ყველაზე უკეთ მოერგო მოცემულ მონაცემებს. 
 	
 MLflow Tracking
+
 	* ექსპერიმენტების ბმული: https://dagshub.com/Givi-Modebadze/Fraud_Detection_ML.mlflow/#/experiments/0?searchFilter=&orderByKey=attributes.start_time&orderByAsc=false&startTime=ALL&lifecycleFilter=Active&modelVersionFilter=All+Runs&datasetsFilter=W10%3D
 	
 	* თითოეული მოდელისთვის შენახული მაქვს მხოლოდ roc_auc_train და roc_auc_test.
